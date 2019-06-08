@@ -1,0 +1,1 @@
+xi bc ed sharutils tcl yasm alsa-utils alsa-oss mpg123 wget
