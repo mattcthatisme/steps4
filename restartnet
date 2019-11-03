@@ -1,0 +1,11 @@
+dhcpcd -k wlp3s0
+sleep 1
+killall wpa_supplicant
+sleep 1
+ifconfig wlp3s0 down
+sleep 60
+ifconfig wlp3s0 up
+sleep 3
+wpa_supplicant -B -i wlp3s0 -c wpa.ukr -D wext
+sleep 3
+dhcpcd wlp3s0
